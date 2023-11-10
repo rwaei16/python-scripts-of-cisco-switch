@@ -1,0 +1,47 @@
+config t
+!
+hostname Test-SW01
+!
+username Mohammed privilege 15 secret Mohammed@123
+!
+int vlan 10
+!
+ip address 10.40.10.28 255.255.255.0
+!
+no shutdown
+!
+exit 
+!
+vlan 10
+!
+exit
+!
+int gi1/0/1
+!
+switchport mode access
+!
+switchport access vlan 10 
+!
+exit
+!
+line vty 0 4
+!
+login local
+!
+transport input all
+!
+exit
+!
+line vty 5 15
+!
+login local
+!
+transport input all
+!
+exit
+!
+exit
+!
+wr
+!
+

@@ -1,0 +1,75 @@
+#  network automation of cisco switches 
+
+Automate the configuration of Cisco switches using this Python script.
+
+## Overview
+
+This Python script uses the Paramiko library to automate the configuration of a Cisco switch. It connects to multiple switches via SSH and applies a set of predefined configuration commands.
+
+## Prerequisites
+
+Before using this script, make sure you have the following prerequisites:
+
+- Python 3.x installed - You can install it from the official website - https://www.python.org/downloads/windows/
+- Paramiko library installed (`pip install paramiko`)
+- Connectivity between the switch and the PC which is having the Script of "Cisco Switch configuration file.py" #please read the File of ( basic switch conf.txt file) This file contains the bacis cisco configuration in order to have connectivity between the switch and PC- copy and paste to your Switch 
+
+
+
+## Usage
+
+1. Clone the repository to your local machine:
+
+
+    ```
+
+2. Change into the project directory:
+
+    ```bash
+    cd Cisco Switch configuration file
+    ```
+
+3. Edit the script (`Cisco Switch configuration file.py`) to update the following variables:
+
+    ```python
+    HOST = "10.40.10.28"  # Replace with your Cisco switch IP address
+    port = 22  # Replace with your SSH port
+    ```
+
+4. Run the script:
+
+
+- Open CMD if you're using windows Operaitng system or Terminal if you're using Linux 
+
+- Run the follwoing in CMD or Terminal  " python3 Cisco Switch configuration file.py "
+    
+
+   The script will prompt you for the SSH username and password, and then connect to the Cisco switch to apply the predefined configuration.
+
+## Configuration Details
+
+The script applies the following configuration to the Cisco switch:
+
+- Configures a banner message of my company test.
+- Creates  user account with specific privileges.
+- Sets the IP domain name and default gateway.
+- Configures trunk mode on the specified interface range.
+- Enables password encryption.
+- configure VLANS
+
+## Notes
+
+- Insure that the Paramiko library is installed before running the script (`pip install paramiko`).
+- Insure that you have connectiviy between the switch and your PC and Vice versa ( make sure to apply the configuration which is in file of basic switch conf.txt into your Switch 
+- Customize the script as needed for your specific Cisco switch and network requirements.
+- Adjust the script to handle errors or exceptions based on your use case.
+
+## Contributing
+
+Contributions are welcome! If you would like to contribute to this project, please let me know and I'll be more than happy to asit 
+
+
+Written by : Mohammed Alsayed
+Follow me in linkedin via this link :www.linkedin.com/in/mohammed-abdulaziz-788704144
+
+
